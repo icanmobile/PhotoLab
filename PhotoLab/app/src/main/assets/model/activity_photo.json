@@ -1,0 +1,27 @@
+{
+  "ME": "model/activity_photo.json",
+  "NAME": "@string/activity_photo",
+  "CLASS_NAME": "com.icanmobile.photolab.ui.photo.PhotoActivity",
+  "LAYOUT": "@layout/activity_photo",
+
+  "BACKGROUND": "@drawable/wall_background",
+  "ACTION_BACK_KEY": "model/activity_camera.json",
+  "FORWARD_ENTER_ANIM": "@anim/right_in",
+  "FORWARD_EXIT_ANIM": "@anim/left_out",
+  "BACKWARD_ENTER_ANIM": "@anim/left_in",
+  "BACKWARD_EXIT_ANIM": "@anim/right_out",
+
+  "BUTTONS": [
+    {
+      "IMAGE": "@drawable/res_effect"
+    },
+    {
+      "IMAGE": "@drawable/res_save",
+      "ACTION": "model/activity_camera.json"
+    },
+    {
+      "IMAGE": "@drawable/res_gallery",
+      "ACTION": "model/activity_gallery.json"
+    }
+  ]
+}

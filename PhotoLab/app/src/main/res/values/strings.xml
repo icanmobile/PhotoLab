@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PhotoLab</string>
+
+    <string name="activity_camera">Camera Activity</string>
+    <string name="activity_photo">Photo Activity</string>
+    <string name="activity_gallery">Gallery Activity</string>
+
+    <string name="request_permission_title">Permission necessary</string>
+    <string name="request_permission_desc">This sample needs camera permission.</string>
+    <string name="request_permission_denied">Permission denied</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="image_description">Image</string>
+</resources>

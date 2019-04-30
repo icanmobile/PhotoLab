@@ -1,0 +1,13 @@
+{
+  "ME": "model/activity_gallery.json",
+  "NAME": "@string/activity_gallery",
+  "CLASS_NAME": "com.icanmobile.photolab.ui.gallery.activity.GalleryActivity",
+  "LAYOUT": "@layout/activity_gallery",
+
+  "BACKGROUND": "@drawable/wall_background",
+  "ACTION_BACK_KEY": "model/activity_camera.json",
+  "FORWARD_ENTER_ANIM": "@anim/right_in",
+  "FORWARD_EXIT_ANIM": "@anim/left_out",
+  "BACKWARD_ENTER_ANIM": "@anim/left_in",
+  "BACKWARD_EXIT_ANIM": "@anim/right_out"
+}

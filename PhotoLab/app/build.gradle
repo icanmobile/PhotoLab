@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "com.icanmobile.photolab"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // android jetpack
+    implementation "androidx.appcompat:appcompat:$rootProject.androidx_appcompat_version"
+    implementation "androidx.cardview:cardview:$rootProject.androidx_cardview_version"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidx_constraintlayout_version"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.androidx_recyclerview_version"
+    implementation "androidx.annotation:annotation:$rootProject.androidx_annotation_version"
+    implementation "android.arch.lifecycle:extensions:$rootProject.androidx_lifecycle_version"
+    implementation "android.arch.lifecycle:viewmodel:$rootProject.androidx_lifecycle_version"
+
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.androidx_test_espresso"
+    androidTestImplementation "androidx.test:rules:$rootProject.androidx_test_rules"
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.androidx_test_junit"
+
+    // effects module
+    implementation project(':effects')
+
+    // dependency injection
+    implementation "com.google.dagger:dagger:$rootProject.dagger2_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger2_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger2_version"
+
+    // gson
+    implementation "com.google.code.gson:gson:$rootProject.gson_version"
+
+    // glide
+    implementation "com.github.bumptech.glide:glide:$rootProject.glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glide_version"
+
+    // butter knife
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnife_version"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnife_version"
+
+    // reactive
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroid_version"
+}
