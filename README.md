@@ -36,6 +36,7 @@ UI resources.
   - Method: “com.icanmobile.photolab.ui.base.BaseActivity” changeActivity method.
   - Json Folder: “PhotoLab/app/src/main/assets/model” folder
 
+
 2. Camera UI Classes
 • Custom camera view
   - Full screen preview functionality.
@@ -49,6 +50,7 @@ UI resources.
   - Package “com.icanmobile.photolab.util.file”
   - Json file: “PhotoLab/app/src/main/assets/model/activity_camera.json”
 • Reference: Camera2Basic sample made by Google.
+
 
 3. Photo UI Classes
 • Display still shot photo and request LDR tonemapping effect to PhotoEffect module.
@@ -64,6 +66,7 @@ UI resources.
   - Class “package com.icanmobile.photolab.data.gson.model.ButtonModel”
   - Json file: “PhotoLab/app/src/main/assets/model/activity_photo.json”
 
+
 4. Gallery UI Classes
 • JPEG file searching functionality within application private folder.
 • Grid and single style photo browser functionalities based on android material design components.
@@ -72,6 +75,7 @@ UI resources.
   - Package “com.icanmobile.photolab.ui.gallery.data”
   - Json file: “PhotoLab/app/src/main/assets/model/activity_gallery.json”
 • Reference: android-transition-examples made by Google
+
 
 5. Photo Effect Module
 • Photo Effect class which is an interface between application UI and JNI.
